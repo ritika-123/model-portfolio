@@ -1,0 +1,1 @@
+const filters=document.querySelectorAll('.filters button');const cards=document.querySelectorAll('.card');filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(x=>x.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;cards.forEach(card=>card.classList.toggle('hidden',f!=='all'&&card.dataset.cat!==f))}));
